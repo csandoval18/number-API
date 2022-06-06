@@ -9,6 +9,6 @@ export const useFetch = (url) => {
 			.then((y) => {
 				setState({ data: y, loading: false });
 			});
-	}, []);
+	}, [url]);
 	return state;
 };
