@@ -10,5 +10,5 @@ export const useFetch = (url) => {
 				setState({ data: y, loading: false });
 			});
 	}, [url]);
-	return state;
+	return state.data;
 };

@@ -4,7 +4,7 @@ import { useFetch } from './useFetch';
 
 function App() {
 	const [count, setCount] = useState(0);
-	const { data } = useFetch(`http://numbersapi.com/${count}/trivia`);
+	const data = useFetch(`http://numbersapi.com/${count}/trivia`);
 
 	return (
 		<div className='App'>
